@@ -15,24 +15,15 @@ namespace pryCadoppiEjercitaciónInterfazGráfica
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void frmSOC_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void frmIncidentes_Load(object sender, EventArgs e)
+        private void lblCritico_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void lblBajo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            lblResultadoCritico.BackColor = Color.Red;
+            lblResultadoCritico.Text = "100%";
         }
     }
 }

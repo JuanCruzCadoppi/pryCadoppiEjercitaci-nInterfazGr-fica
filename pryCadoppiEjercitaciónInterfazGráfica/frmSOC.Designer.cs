@@ -32,80 +32,117 @@
             lblAlto = new Label();
             lblMedio = new Label();
             lblBajo = new Label();
+            lblResultadoBajo = new Label();
+            lblResultadoMedio = new Label();
+            lblResultadoAlto = new Label();
             lblResultadoCritico = new Label();
             SuspendLayout();
             // 
             // lblCritico
             // 
             lblCritico.AutoSize = true;
-            lblCritico.Location = new Point(34, 42);
+            lblCritico.Location = new Point(49, 59);
             lblCritico.Name = "lblCritico";
-            lblCritico.Size = new Size(52, 15);
-            lblCritico.TabIndex = 1;
+            lblCritico.Size = new Size(51, 15);
+            lblCritico.TabIndex = 0;
             lblCritico.Text = "CRITICO";
+            lblCritico.Click += lblCritico_Click;
             // 
             // lblAlto
             // 
             lblAlto.AutoSize = true;
-            lblAlto.Location = new Point(34, 76);
+            lblAlto.Location = new Point(49, 87);
             lblAlto.Name = "lblAlto";
-            lblAlto.Size = new Size(35, 15);
-            lblAlto.TabIndex = 2;
+            lblAlto.Size = new Size(34, 15);
+            lblAlto.TabIndex = 1;
             lblAlto.Text = "ALTO";
             // 
             // lblMedio
             // 
             lblMedio.AutoSize = true;
-            lblMedio.Location = new Point(34, 111);
+            lblMedio.Location = new Point(49, 115);
             lblMedio.Name = "lblMedio";
             lblMedio.Size = new Size(44, 15);
-            lblMedio.TabIndex = 3;
+            lblMedio.TabIndex = 2;
             lblMedio.Text = "MEDIO";
             // 
             // lblBajo
             // 
             lblBajo.AutoSize = true;
-            lblBajo.Location = new Point(34, 144);
+            lblBajo.Location = new Point(49, 143);
             lblBajo.Name = "lblBajo";
             lblBajo.Size = new Size(36, 15);
-            lblBajo.TabIndex = 4;
+            lblBajo.TabIndex = 3;
             lblBajo.Text = "BAJO";
-            lblBajo.Click += lblBajo_Click;
+            // 
+            // lblResultadoBajo
+            // 
+            lblResultadoBajo.AutoSize = true;
+            lblResultadoBajo.Location = new Point(153, 143);
+            lblResultadoBajo.Name = "lblResultadoBajo";
+            lblResultadoBajo.Size = new Size(12, 15);
+            lblResultadoBajo.TabIndex = 7;
+            lblResultadoBajo.Text = "-";
+            // 
+            // lblResultadoMedio
+            // 
+            lblResultadoMedio.AutoSize = true;
+            lblResultadoMedio.Location = new Point(153, 115);
+            lblResultadoMedio.Name = "lblResultadoMedio";
+            lblResultadoMedio.Size = new Size(12, 15);
+            lblResultadoMedio.TabIndex = 6;
+            lblResultadoMedio.Text = "-";
+            // 
+            // lblResultadoAlto
+            // 
+            lblResultadoAlto.AutoSize = true;
+            lblResultadoAlto.Location = new Point(153, 87);
+            lblResultadoAlto.Name = "lblResultadoAlto";
+            lblResultadoAlto.Size = new Size(12, 15);
+            lblResultadoAlto.TabIndex = 5;
+            lblResultadoAlto.Text = "-";
             // 
             // lblResultadoCritico
             // 
             lblResultadoCritico.AutoSize = true;
-            lblResultadoCritico.Location = new Point(132, 42);
+            lblResultadoCritico.Location = new Point(153, 59);
             lblResultadoCritico.Name = "lblResultadoCritico";
             lblResultadoCritico.Size = new Size(12, 15);
-            lblResultadoCritico.TabIndex = 5;
+            lblResultadoCritico.TabIndex = 4;
             lblResultadoCritico.Text = "-";
             // 
             // frmSOC
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(226, 231);
+            ClientSize = new Size(256, 215);
+            Controls.Add(lblResultadoBajo);
+            Controls.Add(lblResultadoMedio);
+            Controls.Add(lblResultadoAlto);
             Controls.Add(lblResultadoCritico);
             Controls.Add(lblBajo);
             Controls.Add(lblMedio);
             Controls.Add(lblAlto);
             Controls.Add(lblCritico);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "frmSOC";
-            Text = "SOC - - INCIDENTES";
-            Load += frmIncidentes_Load;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "SOC - - INDICENTES";
+            Load += frmSOC_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
+
         private Label lblCritico;
         private Label lblAlto;
         private Label lblMedio;
         private Label lblBajo;
-        private Label label1;
-        private Label label2;
-        private Label label3;
+        private Label lblResultadoBajo;
+        private Label lblResultadoMedio;
+        private Label lblResultadoAlto;
         private Label lblResultadoCritico;
     }
 }
