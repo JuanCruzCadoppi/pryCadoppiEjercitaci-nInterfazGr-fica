@@ -39,6 +39,7 @@
             txtLaboratorio = new TextBox();
             txtCategoria = new TextBox();
             txtPrecio = new TextBox();
+            btnRegistrar = new Button();
             SuspendLayout();
             // 
             // lblPrecio
@@ -130,11 +131,22 @@
             txtPrecio.Size = new Size(100, 23);
             txtPrecio.TabIndex = 16;
             // 
+            // btnRegistrar
+            // 
+            btnRegistrar.Location = new Point(119, 232);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(75, 23);
+            btnRegistrar.TabIndex = 17;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
+            // 
             // frmCajaDeTexto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(315, 258);
+            Controls.Add(btnRegistrar);
             Controls.Add(txtPrecio);
             Controls.Add(txtCategoria);
             Controls.Add(txtLaboratorio);
@@ -169,5 +181,6 @@
         private TextBox txtLaboratorio;
         private TextBox txtCategoria;
         private TextBox txtPrecio;
+        private Button btnRegistrar;
     }
 }

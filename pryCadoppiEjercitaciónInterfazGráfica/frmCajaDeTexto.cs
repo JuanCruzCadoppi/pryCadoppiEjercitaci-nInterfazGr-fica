@@ -19,5 +19,10 @@ namespace pryCadoppiEjercitaciónInterfazGráfica
         {
 
         }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Código: " + txtCodigo.Text + " Medicamento: " + txtMedicamento.Text );
+        }
     }
 }

@@ -43,7 +43,7 @@
             lblCritico.AutoSize = true;
             lblCritico.Location = new Point(49, 59);
             lblCritico.Name = "lblCritico";
-            lblCritico.Size = new Size(51, 15);
+            lblCritico.Size = new Size(52, 15);
             lblCritico.TabIndex = 0;
             lblCritico.Text = "CRITICO";
             lblCritico.Click += lblCritico_Click;
@@ -53,9 +53,10 @@
             lblAlto.AutoSize = true;
             lblAlto.Location = new Point(49, 87);
             lblAlto.Name = "lblAlto";
-            lblAlto.Size = new Size(34, 15);
+            lblAlto.Size = new Size(35, 15);
             lblAlto.TabIndex = 1;
             lblAlto.Text = "ALTO";
+            lblAlto.Click += lblAlto_Click;
             // 
             // lblMedio
             // 
@@ -65,6 +66,7 @@
             lblMedio.Size = new Size(44, 15);
             lblMedio.TabIndex = 2;
             lblMedio.Text = "MEDIO";
+            lblMedio.Click += lblMedio_Click;
             // 
             // lblBajo
             // 
@@ -74,6 +76,7 @@
             lblBajo.Size = new Size(36, 15);
             lblBajo.TabIndex = 3;
             lblBajo.Text = "BAJO";
+            lblBajo.Click += lblBajo_Click;
             // 
             // lblResultadoBajo
             // 

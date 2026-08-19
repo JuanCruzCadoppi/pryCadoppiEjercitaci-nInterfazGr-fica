@@ -10,6 +10,14 @@ namespace pryCadoppiEjercitaciónInterfazGráfica
 {
     public partial class frmSOC : Form
     {
+        //ZONA VARIABLES GLOBALES
+        // contadores
+
+        int vContadorCritico = 0;
+        int vContadorAlto = 0;
+        int vContadorMedio = 0;
+        int vContadorBajo = 0;
+
         public frmSOC()
         {
             InitializeComponent();
@@ -22,8 +30,43 @@ namespace pryCadoppiEjercitaciónInterfazGráfica
 
         private void lblCritico_Click(object sender, EventArgs e)
         {
-            lblResultadoCritico.BackColor = Color.Red;
-            lblResultadoCritico.Text = "100%";
+            if (vContadorCritico < 100)
+            {
+                vContadorCritico = vContadorCritico + 1;
+                lblResultadoCritico.BackColor = Color.Red;
+
+                if (vContadorCritico == 100)
+                {
+                    lblResultadoCritico.BackColor = Color.Green;
+                }
+            }
+            
+            lblResultadoCritico.Text = vContadorCritico.ToString();
+            
+        }
+
+        private void lblAlto_Click(object sender, EventArgs e)
+        {
+            vContadorAlto = vContadorAlto + 1;
+
+            lblResultadoAlto.BackColor = Color.Orange;
+            lblResultadoAlto.Text = vContadorAlto.ToString();
+        }
+
+        private void lblMedio_Click(object sender, EventArgs e)
+        {
+            vContadorMedio = vContadorMedio + 1;
+
+            lblResultadoMedio.BackColor = Color.Yellow;
+            lblResultadoMedio.Text = vContadorMedio.ToString();
+        }
+
+        private void lblBajo_Click(object sender, EventArgs e)
+        {
+            vContadorBajo = vContadorBajo + 1;
+
+            lblResultadoBajo.BackColor = Color.Green;
+            lblResultadoBajo.Text = vContadorBajo.ToString(); 
         }
     }
 }
